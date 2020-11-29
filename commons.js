@@ -8,7 +8,7 @@ var commonsJs = {
 	},
 
 	/*
-	 * Converts spintax to plain text.
+	 * Converts spintax to a random rotation/sample.
 	 * It doesn't support nested spintax.
 	 * 
 	 * Example:
