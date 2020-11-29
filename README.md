@@ -1,22 +1,22 @@
 # CommonsJs
 
-The **commonsJs** is a little library of functions used at [**ExpandedVenture**](https://expandedventure.com/expandedventure) to develop different UI/UX features.
+The **CommonsJs** is a little library of functions used at [**ExpandedVenture**](https://expandedventure.com/expandedventure) to develop different UI/UX features.
 
-The **commonsJs** library is just starting on Nov-2020, and more functions will be added as needed.
+The **CommonsJs** library is just starting on Nov-2020, and more functions will be added as needed.
 
-The **commonsJs** library has been written following the [**W3C JavaScript Best Practices**](https://www.w3.org/community/webed/wiki/JavaScript_best_practices).
+The **CommonsJs** library has been written following the [**W3C JavaScript Best Practices**](https://www.w3.org/community/webed/wiki/JavaScript_best_practices).
 
 
 Other JavaScript libraries where **CommonsJs** is used are:
 * [**TempaltesJs**](https://github.com/leandrosardi/templatesjs).
 
-# Overview
+# Overview of Version 1.0.1
 
-Here are listed each one of the functions provided by **commonsJs** with examples.
+Here are listed each one of the functions provided by **CommonsJs** with examples.
 
 ## commonsJs.version
 
-Returns the version of this commonsJs library.
+Returns the version of this **CommonsJs** library.
 
 You can find a live example at [https://expandedventure.com/commonsjs/getting_version.html](https://expandedventure.com/commonsjs/getting_version.html).
 
@@ -38,15 +38,11 @@ Here is the source code of such example:
 	</body>
 	<script>
 		$('#getVersion').click(function() {
-			$('#result').text(commonsJs.version);
+			$('#result').text(CommonsJs.version);
 		});
 	</script>
 </html>
 ```
-
-## commonsJs.escapeHTML
-
-## commonsJs.unEscapeHTML
 
 ## commonsJs.spin
 

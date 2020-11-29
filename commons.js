@@ -8,42 +8,6 @@ var commonsJs = {
 	},
 
 	/*
-	 * Escape HYML code from string to user it safely into a dynamic HTML.
-	 * TODO: investigar si esta funcion cumple con todos los caracteres reservados HTML.
-	 *
-	 * Source: 
-	 * https://stackoverflow.com/questions/5499078/fastest-method-to-escape-html-tags-as-html-entities 
-	 */
-	replaceTag: function(tag) {
-		var tagsToReplace = {
-		    '"': '&34;',
-		    "'": '&39;',
-		    '&': '&amp;',
-		    '<': '&lt;',
-		    '>': '&gt;',
-		};
-	    return tagsToReplace[tag] || tag;
-	},
-	escapeHTML: function(s) {
-	    return s.replace(/["'&<>]/g, commonsJs.replaceTag);
-	},
-
-
-	unReplaceTag: function(tag) {
-		var tagsToReplace = {
-		   	'&34;': '"',
-			'&39;': "'",
-		    '&amp;': '&',
-		    '&lt;': '<',
-		  	'&gt;': '>',
-		};
-	    return tagsToReplace[tag] || tag;
-	},
-	unEscapeHTML: function(s) {
-	    return s.replace(/&34;|&39;|&amp;|&lt;|&gt;/g, commonsJs.unReplaceTag);
-	},
-
-	/*
 	 * Converts spintax to plain text.
 	 * It doesn't support nested spintax.
 	 * 
