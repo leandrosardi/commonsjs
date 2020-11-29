@@ -48,9 +48,17 @@ Converts spintax to a random rotation/sample.
 It doesn't support nested spintax.
 
 Example:
+
+The spintax
+```
 "Our {brand new|exclusive|unique|new}  {service|product} {was|is} {crafted|created|designed} to <!benefit1!write the most attractive benefit of your service!>"
+```
+
 may be converted to
+
+```
 "Our brand new product is created to <!benefit1!write the most attractive benefit of your service!>"
+```
 
 You can find a live example at [https://expandedventure.com/commonsjs/rotating_spintax.html](https://expandedventure.com/commonsjs/rotating_spintax.html).
 
