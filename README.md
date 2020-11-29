@@ -105,6 +105,16 @@ Here is the source code of such example:
 </html>
 ```
 
+# Overview of Version 1.0.2
+
+Here are listed each one of the functions added in the version 1.0.2 of **CommonsJs**.
+
+## commonsJs.escapeHTML
+Replaces every HTML reserved char by its regarding HTML entity.
+
+## commonsJs.unEscapeHTML
+Replaces every HTML entity regarding an HTML reserved char by such reserved char.Replaces every HTML reserved char by its regarding HTML entity.
+
 # Disclaimer
 
 Use at your own risk. The use of the software and scripts downloaded on this site is done at your own discretion and risk and with agreement that you will be solely responsible for any damage to any computer system or loss of data that results from such activities.

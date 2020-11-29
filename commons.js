@@ -4,7 +4,53 @@ var commonsJs = {
 	 *  
 	 */
 	version: function() {
-		return '1.0.1';
+		return '1.0.2';
+	},
+
+	/*
+	 * Replaces every HTML reserved char by its regarding HTML entity.
+	 *
+	 * Reference:
+	 * https://www.html.am/reference/html-special-characters.cfm
+	 * 
+	 * Source: 
+	 * https://stackoverflow.com/questions/5499078/fastest-method-to-escape-html-tags-as-html-entities 
+	 */
+	replaceTag: function(tag) {
+		var tagsToReplace = {
+		    '"': '&34;',
+		    "'": '&39;',
+		    '&': '&amp;',
+		    '<': '&lt;',
+		    '>': '&gt;',
+		};
+	    return tagsToReplace[tag] || tag;
+	},
+	escapeHTML: function(s) {
+	    return s.replace(/["'&<>]/g, commonsJs.replaceTag);
+	},
+
+	/*
+	 * Replaces every HTML entity regarding an HTML reserved char by such reserved char.
+	 *
+	 * Reference:
+	 * https://www.html.am/reference/html-special-characters.cfm
+	 * 
+	 * Source: 
+	 * https://stackoverflow.com/questions/5499078/fastest-method-to-escape-html-tags-as-html-entities 
+	 */
+	unReplaceTag: function(tag) {
+		var tagsToReplace = {
+		   	'&34;': '"',
+			'&39;': "'",
+		    '&amp;': '&',
+		    '&lt;': '<',
+		  	'&gt;': '>',
+		};
+	    return tagsToReplace[tag] || tag;
+	},
+	unEscapeHTML: function(s) {
+	    return s.replace(/&34;|&39;|&amp;|&lt;|&gt;/g, commonsJs.unReplaceTag);
 	},
 
 	/*
