@@ -8,7 +8,7 @@ The **CommonsJs** library has been written following the [**W3C JavaScript Best 
 
 
 Other JavaScript libraries where **CommonsJs** is used are:
-* [**TempaltesJs**](https://github.com/leandrosardi/templatesjs).
+* [**TemplatesJs**](https://github.com/leandrosardi/templatesjs).
 
 # Overview of Version 1.0.1
 
