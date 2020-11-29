@@ -24,7 +24,6 @@ Here is the source code of such example:
 
 ```html
 <html>
-
 	<head>
 		<title>
 			Commons.js - Example: Getting Version
@@ -32,20 +31,16 @@ Here is the source code of such example:
 		<script src="./commons.js" type="text/javascript"></script>
 		<script src="./jquery-3.5.1.min.js" type="text/javascript"></script>
 	</head>
-	
 	<body>
 		<button id='getVersion'>Get Version</button><br/>
 		<br/>
 		<textarea id='result' cols=100 rows=15> </textarea>
 	</body>
-	
 	<script>
 		$('#getVersion').click(function() {
 			$('#result').text(commonsJs.version);
-		    // => '1.0.1'
 		});
 	</script>
-
 </html>
 ```
 
