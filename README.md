@@ -1,21 +1,21 @@
-# CommonsJs
+# Commons.Js
 
-The **CommonsJs** is a little library of functions used at [**ExpandedVenture**](https://expandedventure.com/expandedventure) to develop different UI/UX features.
+The **Commons.Js** is a little library of functions used at [**ExpandedVenture**](https://expandedventure.com/expandedventure) to develop different UI/UX features.
 
-The **CommonsJs** library is just starting on Nov-2020, and more functions will be added as needed.
+The **Commons.Js** library is just starting on Nov-2020, and more functions will be added as needed.
 
-The **CommonsJs** library has been written following the [**W3C JavaScript Best Practices**](https://www.w3.org/community/webed/wiki/JavaScript_best_practices).
+The **Commons.Js** library has been written following the [**W3C JavaScript Best Practices**](https://www.w3.org/community/webed/wiki/JavaScript_best_practices).
 
 
-Other JavaScript libraries where **CommonsJs** is used are:
+Other JavaScript libraries where **Commons.Js** is used are:
 * [**TemplatesJs**](https://github.com/leandrosardi/templatesjs).
 
 # Overview of Version 1.0.1
 
-Here are listed each one of the functions provided by **CommonsJs** with examples.
+Here are listed each one of the functions provided by **Commons.Js** with examples.
 
 ## commonsJs.version
-Returns the version of this **CommonsJs** library.
+Returns the version of this **Commons.Js** library.
 
 You can find a live example at [https://expandedventure.com/commonsjs/getting_version.html](https://expandedventure.com/commonsjs/getting_version.html).
 
@@ -107,7 +107,7 @@ Here is the source code of such example:
 
 # Overview of Version 1.0.2
 
-Here are listed each one of the functions added in the version 1.0.2 of **CommonsJs**.
+Here are listed each one of the functions added in the version 1.0.2 of **Commons.Js**.
 
 ## commonsJs.escapeHTML
 Replaces every HTML reserved char by its regarding HTML entity.
