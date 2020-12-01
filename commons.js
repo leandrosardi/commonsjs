@@ -4,7 +4,25 @@ var commonsJs = {
 	 *  
 	 */
 	version: function() {
-		return '1.0.2';
+		return '1.0.3';
+	},
+
+	/*
+	 * Returns true if a value is not null and is not undefined.
+	 * 
+	 * Reference:
+	 * https://www.tutorialrepublic.com/faq/how-to-determine-if-variable-is-undefined-or-null-in-javascript.php
+	 *
+	 */
+	isDefined: function(value) {
+		ret = true;
+		// Since null === undefined is false, the following statements will catch only null or undefined
+		if(typeof value === 'undefined') {
+			ret = false;
+		} else if(value === null){
+			ret = false;
+		}
+		return ret;
 	},
 
 	/*
